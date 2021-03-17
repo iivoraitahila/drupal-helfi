@@ -46,7 +46,7 @@ RUN { \
 # Install required tools (https://docs.acquia.com/blt/install/)
 # alpine-sdk required for the make script in composer.json
 RUN apk update && apk upgrade && \
-    apk add --no-cache git patch rsync bash mariadb-client alpine-sdk
+    apk add --no-cache git patch rsync bash mariadb-client alpine-sdk busybox-suid
 
 ## Install phpredis
 #RUN apk --no-cache add pcre-dev ${PHPIZE_DEPS} \
