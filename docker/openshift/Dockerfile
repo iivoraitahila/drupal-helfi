@@ -61,6 +61,7 @@ WORKDIR /opt/drupal
 
 COPY / /opt/drupal
 RUN chmod +x /opt/drupal/docker/openshift/docker-entrypoint.sh
+RUN chmod +x /opt/drupal/docker/openshift/crontest.sh
 
 # Install and run Composer
 COPY --from=composer:2.0 /usr/bin/composer /usr/local/bin/
