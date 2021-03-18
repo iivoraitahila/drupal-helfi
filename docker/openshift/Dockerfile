@@ -79,6 +79,7 @@ COPY /docker/openshift/docker-entrypoint.sh /usr/local/bin/
 RUN wget https://www.digicert.com/CACerts/BaltimoreCyberTrustRoot.crt.pem -O /usr/local/share/ca-certificates/BaltimoreCyberTrustRoot.crt.pem
 
 RUN echo "echo Hello >> /tmp.log" > /etc/periodic/15min/koe.sh
+RUN chmod g+w /var/www/html
 
 ENTRYPOINT ["/opt/drupal/docker/openshift/docker-entrypoint.sh"]
 
