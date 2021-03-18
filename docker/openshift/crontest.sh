@@ -1,5 +1,5 @@
 #!/bin/bash
 echo "CRON-testi"
-ln -s /var/www/html/public /opt/drupal/public
+ln -s /opt/drupal/public /var/www/html/public
 drush status
 drush uli
