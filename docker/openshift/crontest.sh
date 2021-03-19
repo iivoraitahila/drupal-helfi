@@ -5,7 +5,6 @@ while true
 do
    drush status
    drush uli
-   MIGRATE_LIMIT=500 
-   drush migrate:import tpr_unit
+   MIGRATE_LIMIT=500 drush migrate:import tpr_unit
    sleep 600
 done
