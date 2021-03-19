@@ -46,7 +46,7 @@ RUN { \
 # Install required tools (https://docs.acquia.com/blt/install/)
 # alpine-sdk required for the make script in composer.json
 RUN apk update && apk upgrade && \
-    apk add --no-cache git patch rsync bash mariadb-client alpine-sdk busybox-suid
+    apk add --no-cache git patch rsync bash mariadb-client alpine-sdk
 
 ## Install phpredis
 #RUN apk --no-cache add pcre-dev ${PHPIZE_DEPS} \
@@ -78,7 +78,7 @@ COPY /docker/openshift/docker-entrypoint.sh /usr/local/bin/
 # Fetch certificate for the Azure MariaDB service
 RUN wget https://www.digicert.com/CACerts/BaltimoreCyberTrustRoot.crt.pem -O /usr/local/share/ca-certificates/BaltimoreCyberTrustRoot.crt.pem
 
-RUN echo "echo Hello >> /tmp.log" > /etc/periodic/15min/koe.sh
+# Allow CRON script to mount directories to default Drupal paths
 RUN chmod g+w /var/www/html
 
 ENTRYPOINT ["/opt/drupal/docker/openshift/docker-entrypoint.sh"]
