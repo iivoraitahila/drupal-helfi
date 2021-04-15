@@ -24,6 +24,6 @@ echo "in /var/www/html/public via the terminal"
 cd /var/www/html/public && drush cr && drush cim -y
 
 echo "Run PHP-FPM in the background as a daemon"
-php-fpm -D
+php-fpm
 
-crond -f -l 8
+

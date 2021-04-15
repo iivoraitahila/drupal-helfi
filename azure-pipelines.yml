@@ -19,10 +19,10 @@ pr: none
 resources:
   repositories:
   # Azure DevOps repository
-  - repository: drupal-helfi
+  - repository: ansible-devops-testi-pipelines
     type: git
     # project/repository
-    name: drupal-helfi/drupal-helfi
+    name: ansible-devops-testi/ansible-devops-testi-pipelines
 
 extends:
-  template: azure-pipelines-drupal.yml@drupal-helfi
+  template: azure-pipelines-drupal.yml@ansible-devops-testi-pipelines

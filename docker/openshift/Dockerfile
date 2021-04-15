@@ -61,7 +61,6 @@ WORKDIR /opt/drupal
 
 COPY / /opt/drupal
 RUN chmod +x /opt/drupal/docker/openshift/docker-entrypoint.sh
-RUN chmod +x /opt/drupal/docker/openshift/crontest.sh
 
 # Install and run Composer
 COPY --from=composer:2.0 /usr/bin/composer /usr/local/bin/
@@ -77,9 +76,6 @@ COPY /docker/openshift/docker-entrypoint.sh /usr/local/bin/
 
 # Fetch certificate for the Azure MariaDB service
 RUN wget https://www.digicert.com/CACerts/BaltimoreCyberTrustRoot.crt.pem -O /usr/local/share/ca-certificates/BaltimoreCyberTrustRoot.crt.pem
-
-# Allow CRON script to mount directories to default Drupal paths
-RUN chmod g+w /var/www/html
 
 ENTRYPOINT ["/opt/drupal/docker/openshift/docker-entrypoint.sh"]
 

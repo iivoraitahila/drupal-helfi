@@ -3,6 +3,7 @@ module:
   address: 0
   admin_toolbar: 0
   admin_toolbar_tools: 0
+  aet: 0
   api_tools: 0
   block: 0
   breakpoint: 0
@@ -43,12 +44,13 @@ module:
   helfi_hauki: 0
   helfi_languages: 0
   helfi_media: 0
-  helfi_paragraphs: 0
   helfi_platform_config: 0
   helfi_tpr: 0
   helfi_tunnistamo: 0
+  helfi_units: 0
   image: 0
   image_style_quality: 0
+  imagecache_external: 0
   inline_form_errors: 0
   key_value_field: 0
   language: 0
@@ -61,6 +63,11 @@ module:
   menu_block_current_language: 0
   menu_link_content: 0
   menu_ui: 0
+  metatag: 0
+  metatag_hreflang: 0
+  metatag_open_graph: 0
+  metatag_twitter_cards: 0
+  metatag_views: 0
   migrate: 0
   node: 0
   openid_connect: 0
@@ -70,8 +77,11 @@ module:
   path: 0
   path_alias: 0
   rdf: 0
+  redirect: 0
   responsive_image: 0
+  scheduler: 0
   select2: 0
+  select2_icon: 0
   serialization: 0
   simple_sitemap: 0
   social_media: 0
@@ -80,6 +90,7 @@ module:
   taxonomy: 0
   text: 0
   token: 0
+  token_filter: 0
   toolbar: 0
   twig_tweak: 0
   update: 0
