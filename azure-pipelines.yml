@@ -19,10 +19,10 @@ pr: none
 resources:
   repositories:
   # Azure DevOps repository
-  - repository: ansible-devops-testi-pipelines
+  - repository: paatokset-pipelines
     type: git
     # project/repository
-    name: ansible-devops-testi/ansible-devops-testi-pipelines
+    name: paatokset/paatokset-pipelines
 
 extends:
-  template: azure-pipelines-drupal.yml@ansible-devops-testi-pipelines
+  template: azure-pipelines-drupal.yml@paatokset-pipelines
