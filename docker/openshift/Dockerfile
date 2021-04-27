@@ -4,26 +4,6 @@ FROM php:7.4-fpm-alpine3.12
 # install the PHP extensions we need
 RUN set -eux; \
 	\
-	apk add --no-cache --virtual .build-deps \
-		coreutils \
-		freetype-dev \
-		libjpeg-turbo-dev \
-		libpng-dev \
-		libzip-dev \
-	; \
-	\
-	docker-php-ext-configure gd \
-		--with-freetype \
-		--with-jpeg=/usr/include \
-	; \
-	\
-	docker-php-ext-install -j "$(nproc)" \
-		gd \
-		opcache \
-		pdo_mysql \
-		zip \
-	; \
-	\
 	runDeps="$( \
 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local \
 			| tr ',' '\n' \
@@ -46,7 +26,7 @@ RUN { \
 # Install required tools (https://docs.acquia.com/blt/install/)
 # alpine-sdk required for the make script in composer.json
 RUN apk update && apk upgrade && \
-    apk add --no-cache git patch rsync bash mariadb-client alpine-sdk
+    apk add --no-cache git patch rsync bash
 
 ## Install phpredis
 #RUN apk --no-cache add pcre-dev ${PHPIZE_DEPS} \
