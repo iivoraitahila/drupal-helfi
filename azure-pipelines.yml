@@ -19,10 +19,10 @@ pr: none
 resources:
   repositories:
   # Azure DevOps repository
-  - repository: paatokset-pipelines
+  - repository: casdemo-pipelines
     type: git
     # project/repository
-    name: paatokset/paatokset-pipelines
+    name: casdemo/casdemo-pipelines
 
 extends:
-  template: azure-pipelines-drupal.yml@paatokset-pipelines
+  template: azure-pipelines-drupal.yml@casdemo-pipelines
