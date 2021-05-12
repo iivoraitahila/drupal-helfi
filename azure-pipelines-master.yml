@@ -27,7 +27,7 @@ pool: Default
 resources:
   repositories:
   # Azure DevOps repository
-  - repository: merged-drupal-testi
+  - repository: merged-drupal-testi-pipelines
     type: git
     # project/repository
     name: merged-drupal-testi/merged-drupal-testi-pipelines
