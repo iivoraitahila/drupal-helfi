@@ -27,10 +27,10 @@ pool: Default
 resources:
   repositories:
   # Azure DevOps repository
-  - repository: drupal-helfi
+  - repository: merged-drupal-testi
     type: git
     # project/repository
-    name: drupal-helfi/drupal-helfi
+    name: merged-drupal-testi/merged-drupal-testi-pipelines
 
 extends:
-  template: azure-pipelines-drupal-master.yml@drupal-helfi
+  template: azure-pipelines-merged-drupal-testi-master.yml@merged-drupal-testi-pipelines
