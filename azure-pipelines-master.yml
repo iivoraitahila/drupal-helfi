@@ -33,4 +33,4 @@ resources:
     name: merged-drupal-testi/merged-drupal-testi-pipelines
 
 extends:
-  template: azure-pipelines-drupal-api-master.yml@merged-drupal-testi-pipelines
+  template: azure-pipelines-drupal-testi-api-master.yml@merged-drupal-testi-pipelines
