@@ -4,11 +4,11 @@ module:
   admin_toolbar: 0
   admin_toolbar_tools: 0
   aet: 0
-  api_tools: 0
   block: 0
   breakpoint: 0
   ckeditor: 0
   config: 0
+  config_replace: 0
   config_translation: 0
   config_update: 0
   crop: 0
@@ -20,10 +20,13 @@ module:
   dynamic_page_cache: 0
   easy_breadcrumb: 0
   editor: 0
+  entity: 0
   entity_reference_revisions: 0
+  entity_usage: 0
   features: 0
   features_ui: 0
   field: 0
+  field_group: 0
   field_ui: 0
   file: 0
   filter: 0
@@ -47,7 +50,6 @@ module:
   helfi_platform_config: 0
   helfi_tpr: 0
   helfi_tunnistamo: 0
-  helfi_units: 0
   image: 0
   image_style_quality: 0
   imagecache_external: 0
@@ -74,9 +76,11 @@ module:
   options: 0
   page_cache: 0
   paragraphs_asymmetric_translation_widgets: 0
+  paragraphs_library: 0
   path: 0
   path_alias: 0
   rdf: 0
+  readonly_field_widget: 0
   redirect: 0
   responsive_image: 0
   scheduler: 0
@@ -88,6 +92,7 @@ module:
   syslog: 0
   system: 0
   taxonomy: 0
+  telephone: 0
   text: 0
   token: 0
   token_filter: 0
@@ -95,6 +100,7 @@ module:
   twig_tweak: 0
   update: 0
   user: 0
+  views_infinite_scroll: 0
   views_ui: 0
   pathauto: 1
   content_translation: 10

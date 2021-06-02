@@ -1,3 +1,4 @@
+label: 'TPR units'
 display:
   default:
     display_title: Основной
@@ -12,8 +13,6 @@ display:
       pager:
         options:
           tags:
-            previous: ‹‹
-            next: ››
             first: '« Первая'
             last: 'Последняя »'
           expose:
@@ -24,22 +23,28 @@ display:
         tpr_unit_bulk_form:
           label: 'Массовое обновление'
           action_title: Действие
-        id:
-          label: ID
-          separator: ', '
         name:
           label: Название
-          separator: ', '
+        langcode:
+          label: Язык
+        content_translation_status:
+          label: Статус
+          settings:
+            format_custom_true: Опубликовано
+            format_custom_false: 'Снято с публикации'
         changed:
           label: Изменение
-          separator: ', '
         operations:
           label: Операции
       filters:
         combine:
           expose:
             label: Поиск
-      footer:
+        langcode:
+          expose:
+            label: Язык
+      title: 'TPR units'
+      header:
         result:
           content: 'Отображается с @start по @end из @total'
   page_1:

@@ -19,10 +19,10 @@ pr: none
 resources:
   repositories:
   # Azure DevOps repository
-  - repository: paatokset-pipelines
+  - repository: drupal-helfi
     type: git
     # project/repository
-    name: paatokset/paatokset-pipelines
+    name: drupal-helfi/drupal-helfi
 
 extends:
-  template: azure-pipelines-drupal.yml@paatokset-pipelines
+  template: azure-pipelines-drupal.yml@drupal-helfi
