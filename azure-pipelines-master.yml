@@ -27,10 +27,10 @@ pool: Default
 resources:
   repositories:
   # Azure DevOps repository
-  - repository: drupal-helfi
+  - repository: drupalarchitecturetest-pipelines
     type: git
     # project/repository
-    name: drupal-helfi/drupal-helfi
+    name: drupalarchitecturetest/drupalarchitecturetest-pipelines
 
 extends:
-  template: azure-pipelines-drupal-master.yml@drupal-helfi
+  template: azure-pipelines-drupal-master.yml@drupalarchitecturetest-pipelines
