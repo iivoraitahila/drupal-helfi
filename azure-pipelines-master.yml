@@ -27,10 +27,10 @@ pool: Default
 resources:
   repositories:
   # Azure DevOps repository
-  - repository: testpullsecret-drupal-pipelines
+  - repository: cpu-automation-test1-drupal-pipelines
     type: git
     # project/repository
-    name: testpullsecret-drupal/testpullsecret-drupal-pipelines
+    name: cpu-automation-test1/cpu-automation-test1-pipelines
 
 extends:
-  template: azure-pipelines-drupal-master.yml@testpullsecret-drupal-pipelines
+  template: azure-pipelines-drupal-master.yml@cpu-automation-test1-pipelines
